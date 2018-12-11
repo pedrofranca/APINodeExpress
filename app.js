@@ -4,8 +4,8 @@ const mainRoutes = require('./routes/index.js');
 
 app.use('/', mainRoutes);
 
-var port = process.env.port || 8010;
+var port = 8010;
 
-app.listen(port, () => {
+app.listen(process.env.port || port, () => {
   console.log('App listening on '+ port)
 })
